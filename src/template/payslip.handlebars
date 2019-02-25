@@ -1,0 +1,640 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 8.5in;
+            height: 11in;
+            border: 1px solid black;
+            margin: auto;
+        }
+
+        .container .wrap {
+            width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 0 40px;
+        }
+
+        .container .wrap .title-div {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+
+        .container .wrap .title-div .left,
+        .container .wrap .title-div .right {
+            font-size: 36px;
+            font-weight: 900;
+            width: auto;
+            flex: 1;
+        }
+
+        .container .wrap .title-div .right {
+            text-align: right;
+        }
+
+        .container .wrap .title-div .center {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 2;
+            text-align: center;
+        }
+
+        .container .wrap .title-div p {
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .container .wrap .title-div span {
+            flex: 1;
+            text-align: center;
+        }
+
+        .container .wrap .title-div .name {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .container .wrap .title-div .unit {
+            text-decoration: underline;
+        }
+
+        .container .wrap .payslip {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+        }
+
+        .container .wrap .payslip .row {
+            display: flex;
+            justify-content: flex-start;
+            width: 60%;
+            border-bottom: 1px solid #000;
+        }
+
+        .container .wrap .payslip .title {
+            font-weight: bold;
+            margin-right: 10%;
+            width: 150px;
+        }
+
+        .container .wrap div table{
+            margin: 25px 0 !important;
+        }
+
+        .container .wrap .earnings {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .container .wrap .earnings .title {
+            font-size: 26px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .container .wrap .earnings table {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container .wrap .earnings table thead {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+
+        .container .wrap .earnings table thead tr {
+            flex: 1;
+            display: flex;
+        }
+
+        .container .wrap .earnings table thead tr th {
+            width: 100%;
+            text-align: center;
+            font-weight: 900;
+            padding: 2px;
+        }
+
+        .container .wrap .earnings table tbody {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .container .wrap .earnings table tbody tr {
+            flex: 1;
+            display: flex;
+            padding: 2px;
+            flex-direction: row;
+        }
+
+        .container .wrap .earnings table tbody tr:nth-child(2n) {
+            background-color: #555;
+        }
+
+        .container .wrap .earnings table tbody tr td {
+            flex: 1;
+            text-align: center;
+            font-weight: 900;
+            padding: 2px;
+        }
+
+        .container .wrap .earnings table tbody tr td p {
+            text-align: center;
+            flex: 1;
+        }
+
+        .container .wrap .earnings .total {
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            display: flex;
+            width: 100%;
+        }
+
+        .container .wrap .earnings .total>.title {
+            font-weight: bold;
+            flex: 1;
+            font-size: 20px;
+        }
+
+        .container .wrap .earnings .total .amount {
+            margin: auto;
+            flex: 1;
+            text-align: center;
+        }
+
+        .container .wrap .misc {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .container .wrap .misc .title {
+            font-size: 26px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .container .wrap .misc table {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container .wrap .misc table thead {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+
+        .container .wrap .misc table thead tr {
+            flex: 1;
+            display: flex;
+        }
+
+        .container .wrap .misc table thead tr th {
+            width: 100%;
+            text-align: center;
+            font-weight: 900;
+            padding: 2px;
+        }
+
+        .container .wrap .misc table tbody {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .container .wrap .misc table tbody tr {
+            flex: 1;
+            display: flex;
+            padding: 2px;
+            flex-direction: row;
+        }
+
+        .container .wrap .misc table tbody tr:nth-child(2n) {
+            background-color: #555;
+        }
+
+        .container .wrap .misc table tbody tr td {
+            flex: 1;
+            text-align: center;
+            font-weight: 900;
+            padding: 2px;
+        }
+
+        .container .wrap .misc table tbody tr td p {
+            text-align: center;
+            flex: 1;
+        }
+
+        .container .wrap .misc .total {
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            display: flex;
+            width: 100%;
+        }
+
+        .container .wrap .misc .total>.title {
+            font-weight: bold;
+            flex: 1;
+            font-size: 20px;
+        }
+
+        .container .wrap .misc .total .amount {
+            margin: auto;
+            flex: 1;
+            text-align: center;
+        }
+
+        .container .wrap .variable {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .container .wrap .variable .title {
+            font-size: 26px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .container .wrap .variable table {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container .wrap .variable table thead {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+
+        .container .wrap .variable table thead tr {
+            flex: 1;
+            display: flex;
+        }
+
+        .container .wrap .variable table thead tr th {
+            width: 100%;
+            text-align: center;
+            font-weight: 900;
+            padding: 2px;
+        }
+
+        .container .wrap .variable table tbody {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .container .wrap .variable table tbody tr {
+            flex: 1;
+            display: flex;
+            padding: 2px;
+            flex-direction: row;
+        }
+
+        .container .wrap .variable table tbody tr:nth-child(2n) {
+            background-color: #555;
+        }
+
+        .container .wrap .variable table tbody tr td {
+            flex: 1;
+            text-align: center;
+            font-weight: 900;
+            padding: 2px;
+        }
+
+        .container .wrap .variable table tbody tr td p {
+            text-align: center;
+            flex: 1;
+        }
+
+        .container .wrap .variable .total {
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            display: flex;
+            width: 100%;
+        }
+
+        .container .wrap .variable .total>.title {
+            font-weight: bold;
+            flex: 1;
+            font-size: 20px;
+        }
+
+        .container .wrap .variable .total .amount {
+            margin: auto;
+            flex: 1;
+            text-align: center;
+        }
+
+        .container .wrap .fixed {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .container .wrap .fixed .title {
+            font-size: 26px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .container .wrap .fixed table {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container .wrap .fixed table thead {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+
+        .container .wrap .fixed table thead tr {
+            flex: 1;
+            display: flex;
+        }
+
+        .container .wrap .fixed table thead tr th {
+            width: 100%;
+            text-align: center;
+            font-weight: 900;
+            padding: 2px;
+        }
+
+        .container .wrap .fixed table tbody {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .container .wrap .fixed table tbody tr {
+            flex: 1;
+            display: flex;
+            padding: 2px;
+            flex-direction: row;
+        }
+
+        .container .wrap .fixed table tbody tr:nth-child(2n) {
+            background-color: #555;
+        }
+
+        .container .wrap .fixed table tbody tr td {
+            flex: 1;
+            text-align: center;
+            font-weight: 900;
+            padding: 2px;
+        }
+
+        .container .wrap .fixed table tbody tr td p {
+            text-align: center;
+            flex: 1;
+        }
+
+        .container .wrap .fixed .total {
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            display: flex;
+            width: 100%;
+        }
+
+        .container .wrap .fixed .total>.title {
+            font-weight: bold;
+            flex: 1;
+            font-size: 20px;
+        }
+
+        .container .wrap .fixed .total .amount {
+            margin: auto;
+            flex: 1;
+            text-align: center;
+        }
+
+        .container .wrap .sumup {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container .wrap .sumup .gross {
+            display: flex;
+            width: 100%;
+        }
+
+        .container .wrap .sumup .gross p {
+            flex: 1;
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .container .wrap .sumup .nett {
+            display: flex;
+            width: 100%;
+        }
+
+        .container .wrap .sumup .nett p {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wrap">
+            <div class="title-div">
+                <p class="left">PAYSLIP</p>
+                <div class="center">
+                    <p>HAAS Express Inc.</p>
+                    <span>USDOT#2094212</span>
+                    <span>MC#777329</span>
+                </div>
+                <p class="right">
+                    <script>document.write(new Date().getFullYear())</script>
+                </p>
+            </div>
+            <p class="name">{{name}}</p>
+            <p class="unit">{{unit}}</p>
+            <div class="payslip">
+                <div class="row">
+                    <p class="title">Payslip No.</p>
+                    <p class="title">{{payslipNo}}</p>
+                </div>
+                <div class="row">
+                    <p class="title">Pay Period</p>
+                    <p class="date">{{payPeriodFrom}} to {{payPeriodTo}}</p>
+                </div>
+                <div class="row">
+                    <p class="title">Pay Date</p>
+                    <p class="date">
+                        {{payDate}}
+                    </p>
+                </div>
+            </div>
+            <div class="earnings">
+                <p class="title">Earnings</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Load no.</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each earnings}}
+                        <tr>
+                            <td>
+                                <p>{{name}}</p>
+                            </td>
+                            <td>
+                                <p>{{description}}</p>
+                            </td>
+                            <td>
+                                <p>$ <span>{{amount}}</span></p>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                <div class="total">
+                    <p class="title">Total:</p>
+                    <p style="flex: 1;"></p>
+                    <p class="amount">$ <span>{{earningsTotal}}</span></p>
+                </div>
+            </div>
+            <div class="misc">
+                <p class="title">Misc. Earnings</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each misc}}
+                        <tr>
+                            <td>
+                                <p>{{name}}</p>
+                            </td>
+                            <td>
+                                <p>{{description}}</p>
+                            </td>
+                            <td>
+                                <p>$ <span>{{amount}}</span></p>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                <div class="total">
+                    <p class="title">Total:</p>
+                    <p class="amount">$ <span>{{miscTotal}}</span></p>
+                </div>
+            </div>
+            <div class="variable">
+                <p class="title">Variable deduction</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each variable}}
+                        <tr>
+                            <td>
+                                <p>{{name}}</p>
+                            </td>
+                            <td>
+                                <p>{{description}}</p>
+                            </td>
+                            <td>
+                                <p>$ <span>{{amount}}</span></p>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                <div class="total">
+                    <p class="title">Total:</p>
+                    <p class="amount">$ <span>{{variableTotal}}</span></p>
+                </div>
+            </div>
+            <div class="fixed">
+                <p class="title">Fixed deduction</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each fixed}}
+                        <tr>
+                            <td>
+                                <p>{{name}}</p>
+                            </td>
+                            <td>
+                                <p>{{description}}</p>
+                            </td>
+                            <td>
+                                <p>$ <span>{{amount}}</span></p>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                <div class="total">
+                    <p class="title">Total:</p>
+                    <p class="amount">$ <span>{{fixedTotal}}</span></p>
+                </div>
+            </div>
+            <div class="sumup">
+                <div class="gross">
+                    <p class="title">Gross earning</p>
+                    <p class="amount">$ <span>{{gross}}</span></p>
+                </div>
+                <div class="nett">
+                    <p class="title">Nett pay</p>
+                    <p class="amount">$ <span>{{nett}}</span></p>
+                </div>
+            </div>
+            <!-- <div class="footer">
+                <p>PL</p>
+            </div> -->
+        </div>
+    </div>
+</body>
+
+</html>

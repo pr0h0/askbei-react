@@ -1,0 +1,37 @@
+{
+  "name": "askbei",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "devDependencies": {
+    "electron": "^1.4.14",
+    "foreman": "^3.0.1",
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "handlebars": "^4.1.0",
+    "moment": "^2.24.0",
+    "puppeteer": "^1.12.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.1",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "main": "src/electron-starter.js",
+  "scripts": {
+    "start": "electron .",
+    "react-dev": "set PORT=59678& react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "electron-dev": "set &set ELECTRON_START_URL=http://localhost:59678 && electron .",
+    "prettier": "prettier --write *.js* *\\*.js* *\\*\\*.js*"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}

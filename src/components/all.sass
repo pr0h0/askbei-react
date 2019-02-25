@@ -1,0 +1,497 @@
+.navbar
+    z-index: 2
+    position: sticky
+    top: 0
+    display: flex
+    justify-content: flex-start
+    flex-direction: row
+    width: 100%
+    text-transform: uppercase
+    align-items: center
+    border-bottom: 1px solid #000
+    height: 50px
+    background-color: #08f
+    color: #fff
+    a
+        width: 100px
+        text-decoration: none
+        font-size: 24px
+        border: none
+        border-right: 1px solid black
+        height: 100%
+        line-height: 50px
+        padding-left: 15px
+        color: #fff
+        &:hover
+            color: #000
+    h1
+        flex: 1
+        text-align: center
+.menu
+    display: flex
+    flex-direction: column
+    width: 100%
+    h1
+        width: 100%
+        text-align: center
+        text-transform: uppercase
+        padding: 20px
+        font-size:  40px
+    .menuitems
+        display: flex
+        flex-direction: column
+        width: 400px
+        margin: auto
+        text-align: center
+        a
+            text-decoration: none
+            width: 100%
+            padding: 10px
+            border: 1px solid #000
+            border-radius: 10px
+            font-size: 24px
+            text-decoration: none
+            color: #000
+            text-transform: uppercase
+            margin-top: 15px
+            &:hover
+                background-color: #000
+                color: #fff
+.options
+    display: flex
+    flex-direction: column
+    width: 400px
+    margin: 50px auto
+    button
+        width: 100%
+        background-color: #fff
+        color: #000
+        padding: 10px
+        border: 1px solid #000
+        &:hover
+            background-color: #000
+            color: #fff
+            cursor: pointer
+    .input
+        display: flex
+        flex-direction: column
+        width: 100%
+        label
+            width: 100%
+        input
+            width: 100%
+            padding: 10px
+            border: 1px solid #000
+            margin-top: 10px
+            background-color: #fff
+            color: #000
+            &[type=submit]:hover
+                background-color: #000000
+                color: #fff
+                cursor: pointer
+.stats
+    display: flex
+    flex-direction: column
+    width: 400px
+    margin: 50px auto
+    .box
+        padding: 10px 10px
+        display: flex
+        flex-direction: column
+        border: 1px solid #000
+        margin: 10px 0
+        h3
+            width: 100%
+            text-align: center
+        select
+            width: 100%
+            padding: 10px        
+            margin: 10px 0
+        table
+            width: 100%
+            tbody
+                width: 100%
+                tr
+                    width: 100%
+                    display: flex
+                    td,th
+                        flex: 1
+                        text-align: center
+.newload
+    display: flex
+    flex-direction: column
+    width: 400px
+    margin: 50px auto
+    .input:nth-child(1)
+        margin-bottom: 25px
+    .input
+        display: flex
+        flex-direction: column
+        width: 100%
+        label
+            width: 100%
+        input
+            width: 100%
+            padding: 10px
+            border: 1px solid #000
+            margin-top: 10px
+            background-color: #fff
+            color: #000
+            &[type=submit]:hover
+                background-color: #000000
+                color: #fff
+                cursor: pointer
+        select
+            padding: 10px
+            border: 1px solid #000
+.customers
+    display: flex
+    flex-direction: column
+    margin: 25px auto
+    width: 400px
+    h3
+        padding: 5px
+    .box
+        display: flex
+        flex-direction: column
+        width: 100%
+        &.show
+            display: flex
+        &.hide
+            display: none
+        .input
+            width: 100%
+            input
+                width: 100%
+                padding: 10px
+                background-color: #fff
+                color: #000
+                border: 1px solid #000
+                &[type=submit]:hover
+                    background-color: #000000
+                    color: #fff
+                    cursor: pointer
+            select
+                border: 1px solid #000                
+                width: 100%
+                padding: 10px
+                margin-bottom: 10px
+.newdriver,
+.editdriver
+    display: flex
+    flex-direction: column
+    width: 100%
+    select
+        padding: 10px 
+        width: 100%
+        margin: 10px 0
+    .switch
+        display: flex
+        width: 400px
+        margin: auto
+        padding: 10xp
+        border: 1px solid #000
+        a
+            flex: 1
+            text-align: center
+            padding: 20px
+            border-right: 1px solid #000
+            text-decoration: none
+            color: #000
+            background-color: #fff
+            font-size: 18px
+            &:hover
+                cursor: pointer
+                color: #fff
+                background-color: #000
+            &.active
+                text-decoration: underline
+    form
+        display: flex
+        flex-direction: column
+        width: 400px
+        margin: auto
+        h3
+            font-size: 20px
+            font-weight: normal
+        input[type=submit]
+            background-color: #fff
+            color: #000
+            width: 100%
+            border: 1px solid #000
+            padding: 10px
+            &:hover
+                background-color: #000
+                color: #fff
+                cursor: pointer
+        .box
+            display: flex
+            flex-direction: column
+            .input
+                display: flex
+                flex-direction: column
+                input
+                    padding: 10px
+                    border: 1px solid black
+            &.show
+                display: flex
+            &.hide
+                display: none
+.accounting
+    display: flex
+    flex-direction: column
+    width: 100%
+    padding: 50px 0
+    position: relative
+    .wrap
+        width: 400px
+        display: flex
+        flex-direction: column
+        margin: auto
+        .input
+            width: 100%
+            input
+                width: 100%
+                background-color: #fff
+                color: #000
+                border: 1px solid #000
+                padding: 10px
+                &:disabled
+                    background-color: #c99
+                    color: #f33
+                &[type=submit]:hover:not(:disabled)
+                    background-color: #000
+                    color:#fff
+                    cursor: pointer
+            select
+                margin-top: 20px
+                width: 100%    
+                background-color: #fff
+                color: #000
+                border: 1px solid #000
+                padding: 10px
+        table
+            border: 1px solid #000
+            position: absolute
+            left: 10%
+            width: 80%
+            top: 100%
+            tbody
+                width: 100%
+                tr
+                    width: 100%
+                    td,th
+                        text-align: center
+                        width: 20%
+                        font-size: 16px
+                        button,input
+                            width: 100%
+                            background-color: #fff
+                            color: #000
+                            border: 1px solid #000
+                            &:not(input)
+                                padding: 2px
+                            &:hover:not(input)
+                                background-color: #000
+                                color: #fff
+                                cursor: pointer
+    .modal
+        display: flex
+        flex-direction: column
+        position: absolute
+        top: 0
+        width: 100%
+        background-color: rgba(0,0,0,0.5)
+        padding-top: 50px
+        min-height:100vh
+        &.show
+            display: flex
+        &.hide
+            display: none
+        .wrap
+            width: 80%
+            margin: auto
+            background-color: #fff
+            padding: 10px 
+            border: 1px solid #000
+            h3
+                width: 100%
+                text-align: center
+                text-transform: uppercase
+            .input
+                width: 100%
+                margin: 5px 0
+                input
+                    width: 100%
+                    background-color: #fff
+                    color: #000
+                    border: 1px solid #000
+                    padding: 10px
+            .table
+                width: 100%
+                padding: 0
+                border: 1px solid #000
+                display: flex
+                flex-direction: column
+                .th,.td
+                    border: 1px solid #000
+                .row
+                    flex: 1
+                    display: flex
+                    width: 100%
+                    .th
+                        flex: 1
+                        padding: 5px
+                        background-color: #ccc
+                        text-align: center
+                    .td
+                        flex: 1
+                        text-align: center
+                        padding: 5px
+.notifications
+    display: flex
+    flex-direction: column-reverse
+    position: fixed
+    top: 50px
+    left: 0
+    width: 200px
+    height: auto
+    z-index: 10
+    .item
+        width: 100%
+        border: 1px solid black
+        background-color: rgba(0,0,0,0.5)
+        background: -webkit-linear-gradient(left, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 100%)
+        background: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 100%)
+        display: flex
+        flex-direction: column
+        &:first-child
+            border-bottom-right-radius: 10px
+        &:last-child
+            border-top-right-radius: 10px
+        h3
+            width: 100%
+        p
+            width: 100%
+        span
+            font-size: 10px
+        &.green
+            background: -webkit-linear-gradient(left, rgba(50,255,50,0.7) 0%,rgba(0,0,0,0.3) 100%)
+            background: linear-gradient(to right, rgba(50,255,50,0.7) 0%,rgba(0,0,0,0.3) 100%)
+        &.red
+            background: -webkit-linear-gradient(left, rgba(255,50,50,0.7) 0%,rgba(0,0,0,0.3) 100%)
+            background: linear-gradient(to right, rgba(255,50,50,0.7) 0%,rgba(0,0,0,0.3) 100%)
+        &.hide
+            display: none
+            height: 0
+            border: none
+            opacity: 0
+.driverspayments
+    display: flex
+    flex-direction: column
+    width: 100%
+    padding: 50px 0
+    position: relative
+    .wrap
+        width: 400px
+        display: flex
+        flex-direction: column
+        margin: auto
+        .input
+            width: 100%
+            input
+                width: 100%
+                background-color: #fff
+                color: #000
+                border: 1px solid #000
+                padding: 10px
+                &:disabled
+                    background-color: #c99
+                    color: #f33
+                &[type=submit]:hover:not(:disabled)
+                    background-color: #000
+                    color:#fff
+                    cursor: pointer
+            select
+                margin-top: 20px
+                width: 100%    
+                background-color: #fff
+                color: #000
+                border: 1px solid #000
+                padding: 10px
+        .table
+            position: absolute
+            width: 80%
+            left: 10%
+            top: 90%
+            padding: 0
+            border: 1px solid #000
+            display: flex
+            flex-direction: column
+            margin-bottom: 25px
+            .th,.td
+                border: 1px solid #000
+            .tr
+                flex: 1
+                display: flex
+                width: 100%
+                .th
+                    flex: 1
+                    padding: 5px
+                    background-color: #ccc
+                    text-align: center
+                    font-size: 14px
+                .td
+                    flex: 1
+                    text-align: center
+                    padding: 5px
+    .modal
+        display: flex
+        flex-direction: column
+        position: absolute
+        top: 0
+        width: 100%
+        background-color: rgba(0,0,0,0.5)
+        padding-top: 50px
+        min-height:100vh
+        &.show
+            display: flex
+        &.hide
+            display: none
+        .wrap
+            width: 80%
+            margin: auto
+            background-color: #fff
+            padding: 10px 
+            border: 1px solid #000
+            h3
+                width: 100%
+                text-align: left
+                text-transform: uppercase
+            .input
+                width: 100%
+                margin: 5px 0
+                input
+                    width: 100%
+                    background-color: #fff
+                    color: #000
+                    border: 1px solid #000
+                    padding: 5px
+            .list
+                width: 100%
+                padding: 0
+                display: flex
+                flex-direction: column
+                .items
+                    flex: 1
+                    display: flex
+                    flex-direction: column
+                    width: 100%
+                    border: 1px solid #000
+                    .item
+                        display: flex
+                        flex: 1
+                        text-align: center
+                        .input
+                            flex: 1
+                            margin: 0
