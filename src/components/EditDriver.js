@@ -234,7 +234,8 @@ class EditDriver extends Component {
               })
             }
           >
-            Tractor Unit informations
+            {this.state.tractorClass === "show" ? "-" : "+"} Tractor Unit
+            informations
           </h3>
           <div id="tractor" className={`box ${this.state.tractorClass}`}>
             <div className="input">
@@ -300,7 +301,8 @@ class EditDriver extends Component {
               })
             }
           >
-            Trailer Unit informations
+            {this.state.trailerClass === "show" ? "-" : "+"} Trailer Unit
+            informations
           </h3>
           <div id="trailer" className={`box ${this.state.trailerClass}`}>
             <div className="input">

@@ -274,6 +274,14 @@
 .editdriver form h3 {
   font-size: 20px;
   font-weight: normal;
+  padding: 2.5px;
+  border: 1px solid #08f;
+  cursor: pointer;
+}
+.newdriver form h3:hover,
+.editdriver form h3:hover {
+  background-color: #08f;
+  color: #fff;
 }
 .newdriver form input[type=submit],
 .editdriver form input[type=submit] {

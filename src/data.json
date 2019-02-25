@@ -103,7 +103,7 @@
       "pickupdate": "02-23-2019",
       "invoiceNumber": "11111032",
       "invoiceDate": "02-25-2019",
-      "datePayed": "02-26-2019"
+      "datePayed": "02-27-2019"
     },
     {
       "load": "1550882869470",
@@ -136,7 +136,7 @@
       "pickupdate": "02-23-2019",
       "invoiceNumber": "22221035",
       "invoiceDate": "02-25-2019",
-      "datePayed": null
+      "datePayed": "02-27-2019"
     },
     {
       "load": "1550892711011",
@@ -306,6 +306,69 @@
       "fixedTotal": 180,
       "gross": 4000,
       "nett": 3480
+    },
+    {
+      "fileName": "",
+      "folder": "C:\\Users\\Pr0xY\\Desktop",
+      "name": "Driver 2",
+      "unit": "UNIT 4593",
+      "payslipNo": 201910,
+      "payPeriodFrom": "02-18-2019",
+      "payPeriodTo": "02-25-2019",
+      "payDate": "02-25-2019",
+      "earnings": [
+        {
+          "name": "22221033",
+          "description": "WDC to FL",
+          "amount": "1000",
+          "percent": "8"
+        },
+        {
+          "name": "22221034",
+          "description": "SA to RA",
+          "amount": "5000",
+          "percent": "10"
+        },
+        {
+          "name": "22221035",
+          "description": "ZE to CA",
+          "amount": "1500",
+          "percent": "8"
+        },
+        {
+          "name": "22221036",
+          "description": "ZE to CA",
+          "amount": "1500",
+          "percent": "8"
+        },
+        {
+          "name": "22221037",
+          "description": "ZE to CA",
+          "amount": "1500",
+          "percent": "8"
+        },
+        {
+          "name": "22221038",
+          "description": "PS to SG",
+          "amount": "3000",
+          "percent": "10"
+        },
+        {
+          "name": "22221039",
+          "description": "WDC to FL",
+          "amount": "1000",
+          "percent": "8"
+        }
+      ],
+      "earningsTotal": 14500,
+      "misc": [],
+      "miscTotal": 0,
+      "variable": [{ "name": "Dispatch", "description": "", "amount": "1320" }],
+      "variableTotal": 1320,
+      "fixed": [{ "name": "Insurance", "description": "", "amount": "180" }],
+      "fixedTotal": 180,
+      "gross": 14500,
+      "nett": 13000
     }
   ],
   "load": [
