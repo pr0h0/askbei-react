@@ -23,7 +23,7 @@
   "main": "src/electron-starter.js",
   "scripts": {
     "start": "electron .",
-    "react-dev": "set PORT=59678& react-scripts start",
+    "react-dev": "PORT=59678 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
