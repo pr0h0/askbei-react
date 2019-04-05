@@ -12,7 +12,7 @@
     "handlebars": "^4.1.0",
     "moment": "^2.24.0",
     "puppeteer": "^1.12.2",
-    "react": "^16.2.0",
+    "react": "^16.8.3",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
@@ -28,8 +28,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "electron": "electron .",
-    "electron-dev": "set &set ELECTRON_START_URL=http://localhost:59678 && electron .",
-    "prettier": "prettier --write *.js* *\\*.js* *\\*\\*.js*"
+    "electron-dev": "set ELECTRON_START_URL=http://localhost:59678 && electron .",
+    "prettier": "prettier --write *.js* */*.js* */*/*.js*"
   },
   "eslintConfig": {
     "extends": "react-app"

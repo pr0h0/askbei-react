@@ -96,7 +96,9 @@ class DriversPayments extends Component {
                 name: this.state.driversData.filter(
                   d => d.id === this.refs.driverSelect.value
                 )[0].man.name,
-                unitNo: this.state.usefullInfo.unitNo,
+                unitNo: this.state.driversData.filter(
+                  d => d.id === this.refs.driverSelect.value
+                )[0].tractor.un,
                 payslipNo: this.state.usefullInfo.payslipNo
               }
             },
@@ -194,6 +196,8 @@ class DriversPayments extends Component {
       {
         pdf: {
           ...this.state.pdf,
+          unitNo: this.state.driversData.filter(d => d.id === e.target.value)[0]
+            .tractor.un,
           earnings: erIds,
           fixed: [...this.state.pdf.fixed, fid]
         },

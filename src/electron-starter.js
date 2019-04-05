@@ -22,7 +22,7 @@ function createWindow() {
     mainWindow = null;
   });
   const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
-  Menu.setApplicationMenu(mainMenu);
+  // Menu.setApplicationMenu(mainMenu);
 }
 
 app.on("ready", createWindow);

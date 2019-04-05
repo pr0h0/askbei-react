@@ -19,7 +19,9 @@ hbs.registerHelper("toJSON", value => {
   return JSON.stringify(value);
 });
 async function generatePDF(template, data) {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: ["--no-sandbox", "--disable-setuid-sandbox"]
+  });
   const page = await browser.newPage();
   const content = await compileHBS(template, data);
 
