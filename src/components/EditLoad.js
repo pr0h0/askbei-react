@@ -17,9 +17,13 @@ class EditLoad extends Component {
       grossrate: 0,
       accounted: false,
       deliveryrate: 0,
+      loadNumber: 0,
       customers: [],
       drivers: [],
-      loads: []
+      loads: [],
+      load: [],
+      allLoads: [],
+      searchQuery: ""
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -29,6 +33,7 @@ class EditLoad extends Component {
     this.handleDriverChange = this.handleDriverChange.bind(this);
     this.handleLoadChange = this.handleLoadChange.bind(this);
     this.handleCheckBoxChange = this.handleCheckBoxChange.bind(this);
+    this.handleSearch = this.handleSearch.bind(this);
   }
   componentDidMount = () => {
     if (this.props.data.load && !this.props.data.load.length) {
@@ -38,7 +43,14 @@ class EditLoad extends Component {
     }
     if (this.props.data.load && this.props.data.load.length) {
       let load = this.props.data.load[0];
-      this.setState(load, this.generateSelects);
+      this.setState(
+        {
+          ...load,
+          load: this.props.data.load,
+          allLoads: this.props.data.load
+        },
+        this.generateSelects
+      );
     }
   };
 
@@ -48,8 +60,12 @@ class EditLoad extends Component {
       this.props.history.push("/");
       return;
     }
+
     let load = nextProps.data.load[0];
-    this.setState(load, this.generateSelects);
+    this.setState(
+      { ...load, load: nextProps.data.load, allLoads: nextProps.data.load },
+      this.generateSelects
+    );
   };
   generateSelects = () => {
     let drivers = this.props.data.drivers.map(d => {
@@ -64,7 +80,7 @@ class EditLoad extends Component {
         {d.name}
       </option>
     ));
-    let loads = this.props.data.load.map(d => (
+    let loads = this.state.load.map(d => (
       <option key={d.id} value={d.id} selected={d.id === this.state.id}>
         {d.loadName}
       </option>
@@ -92,6 +108,8 @@ class EditLoad extends Component {
     delete state["drivers"];
     delete state["customers"];
     delete state["loads"];
+    delete state['load'];
+    delete state["searchQuery"];
     let load = this.props.data.load;
     load[load.findIndex(l => l.id === state.id)] = state;
     this.props.saveData({ ...this.props.data, load: load });
@@ -115,7 +133,7 @@ class EditLoad extends Component {
   handleLoadChange = e => {
     e.persist();
     let id = e.target.value;
-    let load = this.props.data.load.filter(l => l.id === id);
+    let load = this.state.load.filter(l => l.id === id);
     if (load.length) {
       load = load[0];
       load = { ...load, drivers: this.state.drivers };
@@ -132,9 +150,57 @@ class EditLoad extends Component {
       accounted: !this.state.accounted
     });
   }
+  handleSearch(e) {
+    if (this.state.searchQuery === "") {
+      this.setState(
+        {
+          load: this.state.allLoads
+        },
+        () => {
+          this.generateSelects();
+          this.handleLoadChange({
+            target: { value: this.state.load[0].id },
+            persist: () => {}
+          });
+        }
+      );
+    } else {
+      let load = this.state.allLoads.filter(
+        l =>
+          l.loadNumber
+            .toLowerCase()
+            .indexOf(this.state.searchQuery.toLowerCase()) !== -1
+      );
+      this.setState({ load }, () => {
+        this.generateSelects();
+        if (this.state.load.length) {
+          this.handleLoadChange({
+            target: { value: this.state.load[0].id },
+            persist: () => {}
+          });
+        } else {
+          document
+            .querySelectorAll(".editload input:not([type=submit]")
+            .forEach(x => (x.value = ""));
+        }
+      });
+    }
+  }
   render() {
     return (
       <form className="newload" onSubmit={this.handleSubmit}>
+        <div className="input">
+          <input
+            type="text"
+            value={this.state.searchQuery}
+            name="searchQuery"
+            onChange={this.handleInputChange}
+            placeholder="Search by load number"
+          />
+          <button type="button" onClick={this.handleSearch}>
+            Search
+          </button>
+        </div>
         <div className="input">
           <label>Loads</label>
           <select onChange={this.handleLoadChange}>{this.state.loads}</select>
@@ -162,6 +228,15 @@ class EditLoad extends Component {
           <select onChange={this.handleCustomerChange}>
             {this.state.customers}
           </select>
+        </div>
+        <div className="input">
+          <label>Load number</label>
+          <input
+            type="text"
+            value={this.state.loadNumber}
+            onChange={this.handleInputChange}
+            name="loadName"
+          />
         </div>
         <div className="input">
           <label>Pick up date</label>

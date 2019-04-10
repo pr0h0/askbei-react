@@ -188,7 +188,7 @@ class Accounting extends Component {
         this.props.data.drivers.filter(d => d.id === load.driver)[0].man
           .driverid +
         this.state.usefullInfo.invoiceNo,
-      loadNumber: "",
+      loadNumber: load.loadNumber,
       amountDue: load.grossrate,
       dueNetDays: this.state.usefullInfo.dueNetDays,
       loadRowData: {

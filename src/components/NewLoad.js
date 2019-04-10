@@ -15,6 +15,7 @@ class NewLoad extends Component {
       deliverylocation: "",
       grossrate: 0,
       deliveryrate: 0,
+      loadNumber: "",
       customers: [],
       drivers: []
     };
@@ -159,6 +160,15 @@ class NewLoad extends Component {
           <select onChange={this.handleCustomerChange}>
             {this.state.customers}
           </select>
+        </div>
+        <div className="input">
+          <label>Load number</label>
+          <input
+            type="text"
+            value={this.state.loadNumber}
+            onChange={this.handleInputChange}
+            name="loadNumber"
+          />
         </div>
         <div className="input">
           <label>Pick up date</label>

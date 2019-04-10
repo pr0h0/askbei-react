@@ -1,1 +1,737 @@
-{"customers":[{"name":"Customer 1","mcnumber":"MC1","billingadress":"BA1","faxnumber":"FN1","email":"E1@E.com","id":"1550880188296"},{"name":"Customer 2","mcnumber":"MC2","billingadress":"BA2","faxnumber":"FN2","email":"E2@E.com","id":"1550880202215"},{"name":"Customer 3","mcnumber":"MC3","billingadress":"BA3","faxnumber":"FN3","email":"E3@E.com","id":"1550880222815"},{"name":"Customer 4","mcnumber":"MC4","billingadress":"BA4","faxnumber":"FN4","email":"E4@E.com","id":"1550880238975"}],"drivers":[{"man":{"name":"Driver 1","driverid":"1111","address":"A1","phonenumber":"PN1","email":"E1@D.com","ssn":"SSN1","dln":"DLN1","dlnex":"2017-11-23","mcex":"2019-02-23T00:24:27.707Z"},"tractor":{"un":"UN1","vin":"VIN1","my":"MY1","model":"M1","dldot":"2019-02-23T00:24:27.707Z","btipn":"BTIN1"},"trailer":{"un":"UN1","vin":"VIN1","my":"MY1","model":"M1","dldot":"2019-02-23T00:24:27.707Z"},"id":"1550881506032"},{"man":{"name":"Driver 2","driverid":"2222","address":"A2","phonenumber":"PN2","email":"E2@D.com","ssn":"SSN2","dln":"DLN2","dlnex":"2019-02-23T00:37:13.865Z","mcex":"2019-02-23T00:37:13.865Z"},"tractor":{"un":"U2","vin":"VIN2","my":"MY2","model":"M2","dldot":"2019-02-23T00:37:13.865Z","btipn":"BTIN2"},"trailer":{"un":"UN2","vin":"VIN2","my":"MY2","model":"M2","dldot":"2019-02-23T00:37:13.865Z"},"id":"1550882289326"}],"invoice":[{"load":"1550882854358","customer":"1550880188296","driver":"1550881506032","grossrate":"2000","deliveryrate":"1900","pickupdate":"02-23-2019","invoiceNumber":"11111032","invoiceDate":"02-25-2019","datePayed":"02-27-2019"},{"load":"1550882869470","customer":"1550880202215","driver":"1550882289326","grossrate":"1000","deliveryrate":"1000","pickupdate":"02-23-2019","invoiceNumber":"22221033","invoiceDate":"02-25-2019","datePayed":"02-27-2019"},{"load":"1550883360899","customer":"1550880188296","driver":"1550882289326","grossrate":"5000","deliveryrate":"4000","pickupdate":"02-23-2019","invoiceNumber":"22221034","invoiceDate":"02-25-2019","datePayed":"02-26-2019"},{"load":"1550883394280","customer":"1550880222815","driver":"1550882289326","grossrate":"1500","deliveryrate":"1000","pickupdate":"02-23-2019","invoiceNumber":"22221035","invoiceDate":"02-25-2019","datePayed":"02-27-2019"},{"load":"1550892711011","customer":"1550880222815","driver":"1550882289326","grossrate":"1500","deliveryrate":"1000","pickupdate":"02-23-2019","invoiceNumber":"22221036","invoiceDate":"02-25-2019","datePayed":null},{"load":"1550893467409","customer":"1550880222815","driver":"1550882289326","grossrate":"1500","deliveryrate":"1000","pickupdate":"02-23-2019","invoiceNumber":"22221037","invoiceDate":"02-25-2019","datePayed":null},{"load":"1551062983519","customer":"1550880188296","driver":"1550882289326","grossrate":"3000","deliveryrate":"3000","pickupdate":"02-25-2019","invoiceNumber":"22221038","invoiceDate":"02-25-2019","datePayed":null},{"load":"1550978748630","customer":"1550880202215","driver":"1550882289326","grossrate":"1000","deliveryrate":"1000","pickupdate":"02-23-2019","invoiceNumber":"22221039","invoiceDate":"02-25-2019","datePayed":"01-02-2018"}],"payslip":[{"fileName":"","folder":"C:\\Users\\Pr0xY\\Desktop","name":"Driver 1","unit":"UNIT 4593","payslipNo":201910,"payPeriodFrom":"02-18-2019","payPeriodTo":"02-25-2019","payDate":"02-25-2019","earnings":[{"name":"11111032","description":"LA to TX","amount":"2000","percent":"8"}],"earningsTotal":2000,"misc":[],"miscTotal":0,"variable":[{"name":"Dispatch","description":"","amount":"160"}],"variableTotal":160,"fixed":[{"name":"Insurance","description":"","amount":"180"}],"fixedTotal":180,"gross":2000,"nett":1660},{"fileName":"","folder":"C:\\Users\\Pr0xY\\Desktop","name":"Driver 2","unit":"UNIT 4593","payslipNo":201910,"payPeriodFrom":"02-18-2019","payPeriodTo":"02-25-2019","payDate":"02-25-2019","earnings":[{"name":"22221033","description":"WDC to FL","amount":"1000","percent":"8"},{"name":"22221034","description":"SA to RA","amount":"5000","percent":"8"},{"name":"22221035","description":"ZE to CA","amount":"1500","percent":"8"},{"name":"22221036","description":"ZE to CA","amount":"1500","percent":"8"},{"name":"22221037","description":"ZE to CA","amount":"1500","percent":"8"},{"name":"22221038","description":"PS to SG","amount":"3000","percent":"8"},{"name":"22221039","description":"WDC to FL","amount":"1000","percent":"8"}],"earningsTotal":14500,"misc":[],"miscTotal":0,"variable":[{"name":"Dispatch","description":"","amount":"1160"}],"variableTotal":1160,"fixed":[{"name":"Insurance","description":"","amount":"180"}],"fixedTotal":180,"gross":14500,"nett":13160},{"fileName":"","folder":"C:\\Users\\Pr0xY\\Desktop","name":"Driver 2","unit":"UNIT 4593","payslipNo":201910,"payPeriodFrom":"02-18-2019","payPeriodTo":"02-25-2019","payDate":"02-25-2019","earnings":[{"name":"22221038","description":"PS to SG","amount":"3000","percent":"8"},{"name":"22221039","description":"WDC to FL","amount":"1000","percent":"10"}],"earningsTotal":4000,"misc":[],"miscTotal":0,"variable":[{"name":"Dispatch","description":"","amount":"340"}],"variableTotal":340,"fixed":[{"name":"Insurance","description":"","amount":"180"}],"fixedTotal":180,"gross":4000,"nett":3480},{"fileName":"","folder":"C:\\Users\\Pr0xY\\Desktop","name":"Driver 2","unit":"UNIT 4593","payslipNo":201910,"payPeriodFrom":"02-18-2019","payPeriodTo":"02-25-2019","payDate":"02-25-2019","earnings":[{"name":"22221033","description":"WDC to FL","amount":"1000","percent":"8"},{"name":"22221034","description":"SA to RA","amount":"5000","percent":"10"},{"name":"22221035","description":"ZE to CA","amount":"1500","percent":"8"},{"name":"22221036","description":"ZE to CA","amount":"1500","percent":"8"},{"name":"22221037","description":"ZE to CA","amount":"1500","percent":"8"},{"name":"22221038","description":"PS to SG","amount":"3000","percent":"10"},{"name":"22221039","description":"WDC to FL","amount":"1000","percent":"8"}],"earningsTotal":14500,"misc":[],"miscTotal":0,"variable":[{"name":"Dispatch","description":"","amount":"1320"}],"variableTotal":1320,"fixed":[{"name":"Insurance","description":"","amount":"180"}],"fixedTotal":180,"gross":14500,"nett":13000},{"fileName":"sdf.pdf","folder":"/home/pr0xy","name":"Driver 1","unit":"UN1","payslipNo":201910,"payPeriodFrom":"03-29-2018","payPeriodTo":"04-05-2019","payDate":"04-05-2019","earnings":[{"name":"11111032","description":"LA to TX","amount":"2000","percent":"8"}],"earningsTotal":2000,"misc":[],"miscTotal":0,"variable":[{"name":"Dispatch","description":"","amount":"160"}],"variableTotal":160,"fixed":[{"name":"Insurance","description":"","amount":"180"}],"fixedTotal":180,"gross":2000,"nett":1660},{"fileName":"asdf.pdf","folder":"/home/pr0xy","name":"Driver 1","unit":"UNIT 4593","payslipNo":201910,"payPeriodFrom":"03-29-2018","payPeriodTo":"04-05-2019","payDate":"04-05-2019","earnings":[{"name":"11111032","description":"LA to TX","amount":"2000","percent":"8"}],"earningsTotal":2000,"misc":[],"miscTotal":0,"variable":[{"name":"Dispatch","description":"","amount":"160"}],"variableTotal":160,"fixed":[{"name":"Insurance","description":"","amount":"180"}],"fixedTotal":180,"gross":2000,"nett":1660},{"fileName":"asdf.pdf","folder":"/home/pr0xy","name":"Driver 2","unit":"U2","payslipNo":201910,"payPeriodFrom":"03-29-2018","payPeriodTo":"04-05-2019","payDate":"04-05-2019","earnings":[{"name":"22221033","description":"WDC to FL","amount":"1000","percent":"8"},{"name":"22221034","description":"SA to RA","amount":"5000","percent":"8"},{"name":"22221035","description":"ZE to CA","amount":"1500","percent":"8"},{"name":"22221036","description":"ZE to CA","amount":"1500","percent":"8"},{"name":"22221037","description":"ZE to CA","amount":"1500","percent":"8"},{"name":"22221038","description":"PS to SG","amount":"3000","percent":"8"},{"name":"22221039","description":"WDC to FL","amount":"1000","percent":"8"}],"earningsTotal":14500,"misc":[],"miscTotal":0,"variable":[{"name":"Dispatch","description":"","amount":"1160"}],"variableTotal":1160,"fixed":[{"name":"Insurance","description":"","amount":"180"}],"fixedTotal":180,"gross":14500,"nett":13160},{"fileName":"asdf.pdf","folder":"/home/pr0xy","name":"Driver 1","unit":"UN1","payslipNo":201910,"payPeriodFrom":"03-29-2018","payPeriodTo":"04-05-2019","payDate":"04-05-2019","earnings":[{"name":"11111032","description":"LA to TX","amount":"2000","percent":"8"}],"earningsTotal":2000,"misc":[],"miscTotal":0,"variable":[{"name":"Dispatch","description":"","amount":"160"}],"variableTotal":160,"fixed":[{"name":"Insurance","description":"","amount":"180"}],"fixedTotal":180,"gross":2000,"nett":1660}],"load":[{"id":"1550882854358","loadName":"160001","customer":"1550880188296","driver":"1550881506032","pickupdate":"2019-02-23T00:47:14.187Z","pickuplocation":"LA","deliverydate":"2019-02-23T00:47:14.187Z","deliverylocation":"TX","grossrate":"2000","accounted":true,"deliveryrate":"1900"},{"id":"1550882869470","loadName":"160002","customer":"1550880202215","driver":"1550882289326","pickupdate":"2019-02-23T00:47:35.346Z","pickuplocation":"WDC","deliverydate":"2019-02-23T00:47:35.346Z","deliverylocation":"FL","grossrate":"1000","accounted":true,"deliveryrate":"1000"},{"id":"1550883360899","loadName":"160003","customer":"1550880188296","driver":"1550882289326","pickupdate":"2019-02-23T00:55:48.468Z","pickuplocation":"SA","deliverydate":"2019-02-23T00:55:48.468Z","deliverylocation":"RA","grossrate":"5000","accounted":true,"deliveryrate":"4000"},{"id":"1550883394280","loadName":"160004","customer":"1550880222815","driver":"1550882289326","pickupdate":"2019-02-23T00:56:19.218Z","pickuplocation":"ZE","deliverydate":"2019-02-23T00:56:19.218Z","deliverylocation":"CA","grossrate":"1500","accounted":true,"deliveryrate":"1000"},{"id":"1550892711011","loadName":"160005","customer":"1550880222815","driver":"1550882289326","pickupdate":"2019-02-23T00:56:19.218Z","pickuplocation":"ZE","deliverydate":"2019-02-23T00:56:19.218Z","deliverylocation":"CA","grossrate":"1500","accounted":true,"deliveryrate":"1000"},{"id":"1550893467409","loadName":"160006","customer":"1550880222815","driver":"1550882289326","pickupdate":"2019-02-23T00:56:19.218Z","pickuplocation":"ZE","deliverydate":"2019-02-23T00:56:19.218Z","deliverylocation":"CA","grossrate":"1500","accounted":true,"deliveryrate":"1000"},{"id":"1550978748630","loadName":"160007","customer":"1550880202215","driver":"1550882289326","pickupdate":"2019-02-23T00:47:35.346Z","pickuplocation":"WDC","deliverydate":"2019-02-23T00:47:35.346Z","deliverylocation":"FL","grossrate":"1000","accounted":true,"deliveryrate":"1000"},{"id":"1550982222258","loadName":"160008","customer":"1550880238975","driver":"1550881506032","pickupdate":"2019-02-20","pickuplocation":"TA","deliverydate":"2019-02-24T04:23:11.069Z","deliverylocation":"SA","grossrate":"7000","deliveryrate":"5000","accounted":false},{"id":"1550984474031","loadName":"160009","customer":"1550880238975","driver":"1550881506032","pickupdate":"2019-02-20","pickuplocation":"TA","deliverydate":"2019-02-24T04:23:11.069Z","deliverylocation":"SA","grossrate":"7000","accounted":false,"deliveryrate":"5000"},{"id":"1550984478126","loadName":"160010","customer":"1550880222815","driver":"1550882289326","pickupdate":"2019-02-23T00:56:19.218Z","pickuplocation":"ZE","deliverydate":"2019-02-23T00:56:19.218Z","deliverylocation":"CA","grossrate":"1500","accounted":false,"deliveryrate":"1000"},{"id":"1550993929150","loadName":"160011","customer":"1550880188296","driver":"1550882289326","pickupdate":"2019-12-01","pickuplocation":"SA","deliverydate":"2019-02-23T00:55:48.468Z","deliverylocation":"RA","grossrate":"5000","accounted":false,"deliveryrate":"4000"},{"customer":"1550880188296","driver":"1550882289326","pickupdate":"2019-02-25T02:49:29.619Z","pickuplocation":"PS","deliverydate":"2019-01-25","deliverylocation":"SG","grossrate":"3000","deliveryrate":"3000","loadName":"160012","id":"1551062983519","accounted":true},{"customer":"1550880188296","driver":"1550881506032","pickupdate":"2019-02-23T00:47:14.187Z","pickuplocation":"LA","deliverydate":"2019-02-23T00:47:14.187Z","deliverylocation":"TX","grossrate":"2000","deliveryrate":"1900","id":"1551074390577","loadName":"160013","accounted":false},{"customer":"1550880222815","driver":"1550882289326","pickupdate":"2019-02-23T00:56:19.218Z","pickuplocation":"ZE","deliverydate":"2019-02-23T00:56:19.218Z","deliverylocation":"CA","grossrate":"1500","deliveryrate":"1000","id":"1551085892100","loadName":"160014","accounted":false}],"usefullInfo":{"nextLoadId":160015,"dueNetDays":30,"unitNo":"UNIT 4593","payslipNo":201910,"invoiceNo":1040}}
+{
+  "customers": [
+    {
+      "name": "Customer 1",
+      "mcnumber": "MC1",
+      "billingadress": "BA1",
+      "faxnumber": "FN1",
+      "email": "E1@E.com",
+      "id": "1550880188296"
+    },
+    {
+      "name": "Customer 2",
+      "mcnumber": "MC2",
+      "billingadress": "BA2",
+      "faxnumber": "FN2",
+      "email": "E2@E.com",
+      "id": "1550880202215"
+    },
+    {
+      "name": "Customer 3",
+      "mcnumber": "MC3",
+      "billingadress": "BA3",
+      "faxnumber": "FN3",
+      "email": "E3@E.com",
+      "id": "1550880222815"
+    },
+    {
+      "name": "Customer 4",
+      "mcnumber": "MC4",
+      "billingadress": "BA4",
+      "faxnumber": "FN4",
+      "email": "E4@E.com",
+      "id": "1550880238975"
+    }
+  ],
+  "drivers": [
+    {
+      "man": {
+        "name": "Driver 1",
+        "driverid": "1111",
+        "address": "A1",
+        "phonenumber": "PN1",
+        "email": "E1@D.com",
+        "ssn": "SSN1",
+        "dln": "DLN1",
+        "dlnex": "2017-11-23",
+        "mcex": "2019-02-23T00:24:27.707Z"
+      },
+      "tractor": {
+        "un": "UN1",
+        "vin": "VIN1",
+        "my": "MY1",
+        "model": "M1",
+        "dldot": "2019-02-23T00:24:27.707Z",
+        "btipn": "BTIN1"
+      },
+      "trailer": {
+        "un": "UN1",
+        "vin": "VIN1",
+        "my": "MY1",
+        "model": "M1",
+        "dldot": "2019-02-23T00:24:27.707Z"
+      },
+      "id": "1550881506032"
+    },
+    {
+      "man": {
+        "name": "Driver 2",
+        "driverid": "2222",
+        "address": "A2",
+        "phonenumber": "PN2",
+        "email": "E2@D.com",
+        "ssn": "SSN2",
+        "dln": "DLN2",
+        "dlnex": "2019-02-23T00:37:13.865Z",
+        "mcex": "2019-02-23T00:37:13.865Z"
+      },
+      "tractor": {
+        "un": "U2",
+        "vin": "VIN2",
+        "my": "MY2",
+        "model": "M2",
+        "dldot": "2019-02-23T00:37:13.865Z",
+        "btipn": "BTIN2"
+      },
+      "trailer": {
+        "un": "UN2",
+        "vin": "VIN2",
+        "my": "MY2",
+        "model": "M2",
+        "dldot": "2019-02-23T00:37:13.865Z"
+      },
+      "id": "1550882289326"
+    }
+  ],
+  "invoice": [
+    {
+      "load": "1550882854358",
+      "customer": "1550880188296",
+      "driver": "1550881506032",
+      "grossrate": "2000",
+      "deliveryrate": "1900",
+      "pickupdate": "02-23-2019",
+      "invoiceNumber": "11111032",
+      "invoiceDate": "02-25-2019",
+      "datePayed": "02-27-2019"
+    },
+    {
+      "load": "1550882869470",
+      "customer": "1550880202215",
+      "driver": "1550882289326",
+      "grossrate": "1000",
+      "deliveryrate": "1000",
+      "pickupdate": "02-23-2019",
+      "invoiceNumber": "22221033",
+      "invoiceDate": "02-25-2019",
+      "datePayed": "02-27-2019"
+    },
+    {
+      "load": "1550883360899",
+      "customer": "1550880188296",
+      "driver": "1550882289326",
+      "grossrate": "5000",
+      "deliveryrate": "4000",
+      "pickupdate": "02-23-2019",
+      "invoiceNumber": "22221034",
+      "invoiceDate": "02-25-2019",
+      "datePayed": "02-26-2019"
+    },
+    {
+      "load": "1550883394280",
+      "customer": "1550880222815",
+      "driver": "1550882289326",
+      "grossrate": "1500",
+      "deliveryrate": "1000",
+      "pickupdate": "02-23-2019",
+      "invoiceNumber": "22221035",
+      "invoiceDate": "02-25-2019",
+      "datePayed": "02-27-2019"
+    },
+    {
+      "load": "1550892711011",
+      "customer": "1550880222815",
+      "driver": "1550882289326",
+      "grossrate": "1500",
+      "deliveryrate": "1000",
+      "pickupdate": "02-23-2019",
+      "invoiceNumber": "22221036",
+      "invoiceDate": "02-25-2019",
+      "datePayed": null
+    },
+    {
+      "load": "1550893467409",
+      "customer": "1550880222815",
+      "driver": "1550882289326",
+      "grossrate": "1500",
+      "deliveryrate": "1000",
+      "pickupdate": "02-23-2019",
+      "invoiceNumber": "22221037",
+      "invoiceDate": "02-25-2019",
+      "datePayed": null
+    },
+    {
+      "load": "1551062983519",
+      "customer": "1550880188296",
+      "driver": "1550882289326",
+      "grossrate": "3000",
+      "deliveryrate": "3000",
+      "pickupdate": "02-25-2019",
+      "invoiceNumber": "22221038",
+      "invoiceDate": "02-25-2019",
+      "datePayed": null
+    },
+    {
+      "load": "1550978748630",
+      "customer": "1550880202215",
+      "driver": "1550882289326",
+      "grossrate": "1000",
+      "deliveryrate": "1000",
+      "pickupdate": "02-23-2019",
+      "invoiceNumber": "22221039",
+      "invoiceDate": "02-25-2019",
+      "datePayed": "01-02-2018"
+    }
+  ],
+  "payslip": [
+    {
+      "fileName": "",
+      "folder": "C:\\Users\\Pr0xY\\Desktop",
+      "name": "Driver 1",
+      "unit": "UNIT 4593",
+      "payslipNo": 201910,
+      "payPeriodFrom": "02-18-2019",
+      "payPeriodTo": "02-25-2019",
+      "payDate": "02-25-2019",
+      "earnings": [
+        {
+          "name": "11111032",
+          "description": "LA to TX",
+          "amount": "2000",
+          "percent": "8"
+        }
+      ],
+      "earningsTotal": 2000,
+      "misc": [],
+      "miscTotal": 0,
+      "variable": [{ "name": "Dispatch", "description": "", "amount": "160" }],
+      "variableTotal": 160,
+      "fixed": [{ "name": "Insurance", "description": "", "amount": "180" }],
+      "fixedTotal": 180,
+      "gross": 2000,
+      "nett": 1660
+    },
+    {
+      "fileName": "",
+      "folder": "C:\\Users\\Pr0xY\\Desktop",
+      "name": "Driver 2",
+      "unit": "UNIT 4593",
+      "payslipNo": 201910,
+      "payPeriodFrom": "02-18-2019",
+      "payPeriodTo": "02-25-2019",
+      "payDate": "02-25-2019",
+      "earnings": [
+        {
+          "name": "22221033",
+          "description": "WDC to FL",
+          "amount": "1000",
+          "percent": "8"
+        },
+        {
+          "name": "22221034",
+          "description": "SA to RA",
+          "amount": "5000",
+          "percent": "8"
+        },
+        {
+          "name": "22221035",
+          "description": "ZE to CA",
+          "amount": "1500",
+          "percent": "8"
+        },
+        {
+          "name": "22221036",
+          "description": "ZE to CA",
+          "amount": "1500",
+          "percent": "8"
+        },
+        {
+          "name": "22221037",
+          "description": "ZE to CA",
+          "amount": "1500",
+          "percent": "8"
+        },
+        {
+          "name": "22221038",
+          "description": "PS to SG",
+          "amount": "3000",
+          "percent": "8"
+        },
+        {
+          "name": "22221039",
+          "description": "WDC to FL",
+          "amount": "1000",
+          "percent": "8"
+        }
+      ],
+      "earningsTotal": 14500,
+      "misc": [],
+      "miscTotal": 0,
+      "variable": [{ "name": "Dispatch", "description": "", "amount": "1160" }],
+      "variableTotal": 1160,
+      "fixed": [{ "name": "Insurance", "description": "", "amount": "180" }],
+      "fixedTotal": 180,
+      "gross": 14500,
+      "nett": 13160
+    },
+    {
+      "fileName": "",
+      "folder": "C:\\Users\\Pr0xY\\Desktop",
+      "name": "Driver 2",
+      "unit": "UNIT 4593",
+      "payslipNo": 201910,
+      "payPeriodFrom": "02-18-2019",
+      "payPeriodTo": "02-25-2019",
+      "payDate": "02-25-2019",
+      "earnings": [
+        {
+          "name": "22221038",
+          "description": "PS to SG",
+          "amount": "3000",
+          "percent": "8"
+        },
+        {
+          "name": "22221039",
+          "description": "WDC to FL",
+          "amount": "1000",
+          "percent": "10"
+        }
+      ],
+      "earningsTotal": 4000,
+      "misc": [],
+      "miscTotal": 0,
+      "variable": [{ "name": "Dispatch", "description": "", "amount": "340" }],
+      "variableTotal": 340,
+      "fixed": [{ "name": "Insurance", "description": "", "amount": "180" }],
+      "fixedTotal": 180,
+      "gross": 4000,
+      "nett": 3480
+    },
+    {
+      "fileName": "",
+      "folder": "C:\\Users\\Pr0xY\\Desktop",
+      "name": "Driver 2",
+      "unit": "UNIT 4593",
+      "payslipNo": 201910,
+      "payPeriodFrom": "02-18-2019",
+      "payPeriodTo": "02-25-2019",
+      "payDate": "02-25-2019",
+      "earnings": [
+        {
+          "name": "22221033",
+          "description": "WDC to FL",
+          "amount": "1000",
+          "percent": "8"
+        },
+        {
+          "name": "22221034",
+          "description": "SA to RA",
+          "amount": "5000",
+          "percent": "10"
+        },
+        {
+          "name": "22221035",
+          "description": "ZE to CA",
+          "amount": "1500",
+          "percent": "8"
+        },
+        {
+          "name": "22221036",
+          "description": "ZE to CA",
+          "amount": "1500",
+          "percent": "8"
+        },
+        {
+          "name": "22221037",
+          "description": "ZE to CA",
+          "amount": "1500",
+          "percent": "8"
+        },
+        {
+          "name": "22221038",
+          "description": "PS to SG",
+          "amount": "3000",
+          "percent": "10"
+        },
+        {
+          "name": "22221039",
+          "description": "WDC to FL",
+          "amount": "1000",
+          "percent": "8"
+        }
+      ],
+      "earningsTotal": 14500,
+      "misc": [],
+      "miscTotal": 0,
+      "variable": [{ "name": "Dispatch", "description": "", "amount": "1320" }],
+      "variableTotal": 1320,
+      "fixed": [{ "name": "Insurance", "description": "", "amount": "180" }],
+      "fixedTotal": 180,
+      "gross": 14500,
+      "nett": 13000
+    },
+    {
+      "fileName": "sdf.pdf",
+      "folder": "/home/pr0xy",
+      "name": "Driver 1",
+      "unit": "UN1",
+      "payslipNo": 201910,
+      "payPeriodFrom": "03-29-2018",
+      "payPeriodTo": "04-05-2019",
+      "payDate": "04-05-2019",
+      "earnings": [
+        {
+          "name": "11111032",
+          "description": "LA to TX",
+          "amount": "2000",
+          "percent": "8"
+        }
+      ],
+      "earningsTotal": 2000,
+      "misc": [],
+      "miscTotal": 0,
+      "variable": [{ "name": "Dispatch", "description": "", "amount": "160" }],
+      "variableTotal": 160,
+      "fixed": [{ "name": "Insurance", "description": "", "amount": "180" }],
+      "fixedTotal": 180,
+      "gross": 2000,
+      "nett": 1660
+    },
+    {
+      "fileName": "asdf.pdf",
+      "folder": "/home/pr0xy",
+      "name": "Driver 1",
+      "unit": "UNIT 4593",
+      "payslipNo": 201910,
+      "payPeriodFrom": "03-29-2018",
+      "payPeriodTo": "04-05-2019",
+      "payDate": "04-05-2019",
+      "earnings": [
+        {
+          "name": "11111032",
+          "description": "LA to TX",
+          "amount": "2000",
+          "percent": "8"
+        }
+      ],
+      "earningsTotal": 2000,
+      "misc": [],
+      "miscTotal": 0,
+      "variable": [{ "name": "Dispatch", "description": "", "amount": "160" }],
+      "variableTotal": 160,
+      "fixed": [{ "name": "Insurance", "description": "", "amount": "180" }],
+      "fixedTotal": 180,
+      "gross": 2000,
+      "nett": 1660
+    },
+    {
+      "fileName": "asdf.pdf",
+      "folder": "/home/pr0xy",
+      "name": "Driver 2",
+      "unit": "U2",
+      "payslipNo": 201910,
+      "payPeriodFrom": "03-29-2018",
+      "payPeriodTo": "04-05-2019",
+      "payDate": "04-05-2019",
+      "earnings": [
+        {
+          "name": "22221033",
+          "description": "WDC to FL",
+          "amount": "1000",
+          "percent": "8"
+        },
+        {
+          "name": "22221034",
+          "description": "SA to RA",
+          "amount": "5000",
+          "percent": "8"
+        },
+        {
+          "name": "22221035",
+          "description": "ZE to CA",
+          "amount": "1500",
+          "percent": "8"
+        },
+        {
+          "name": "22221036",
+          "description": "ZE to CA",
+          "amount": "1500",
+          "percent": "8"
+        },
+        {
+          "name": "22221037",
+          "description": "ZE to CA",
+          "amount": "1500",
+          "percent": "8"
+        },
+        {
+          "name": "22221038",
+          "description": "PS to SG",
+          "amount": "3000",
+          "percent": "8"
+        },
+        {
+          "name": "22221039",
+          "description": "WDC to FL",
+          "amount": "1000",
+          "percent": "8"
+        }
+      ],
+      "earningsTotal": 14500,
+      "misc": [],
+      "miscTotal": 0,
+      "variable": [{ "name": "Dispatch", "description": "", "amount": "1160" }],
+      "variableTotal": 1160,
+      "fixed": [{ "name": "Insurance", "description": "", "amount": "180" }],
+      "fixedTotal": 180,
+      "gross": 14500,
+      "nett": 13160
+    },
+    {
+      "fileName": "asdf.pdf",
+      "folder": "/home/pr0xy",
+      "name": "Driver 1",
+      "unit": "UN1",
+      "payslipNo": 201910,
+      "payPeriodFrom": "03-29-2018",
+      "payPeriodTo": "04-05-2019",
+      "payDate": "04-05-2019",
+      "earnings": [
+        {
+          "name": "11111032",
+          "description": "LA to TX",
+          "amount": "2000",
+          "percent": "8"
+        }
+      ],
+      "earningsTotal": 2000,
+      "misc": [],
+      "miscTotal": 0,
+      "variable": [{ "name": "Dispatch", "description": "", "amount": "160" }],
+      "variableTotal": 160,
+      "fixed": [{ "name": "Insurance", "description": "", "amount": "180" }],
+      "fixedTotal": 180,
+      "gross": 2000,
+      "nett": 1660
+    }
+  ],
+  "load": [
+    {
+      "id": "1550882854358",
+      "loadName": "160001",
+      "customer": "1550880188296",
+      "driver": "1550881506032",
+      "pickupdate": "2019-02-23T00:47:14.187Z",
+      "pickuplocation": "LA",
+      "deliverydate": "2019-02-23T00:47:14.187Z",
+      "deliverylocation": "TX",
+      "grossrate": "2000",
+      "accounted": true,
+      "deliveryrate": "1900",
+      "loadNumber": "LN1"
+    },
+    {
+      "id": "1550882869470",
+      "loadName": "160002",
+      "customer": "1550880202215",
+      "driver": "1550882289326",
+      "pickupdate": "2019-02-23T00:47:35.346Z",
+      "pickuplocation": "WDC",
+      "deliverydate": "2019-02-23T00:47:35.346Z",
+      "deliverylocation": "FL",
+      "grossrate": "1000",
+      "accounted": true,
+      "deliveryrate": "1000",
+      "loadNumber": "LN2"
+    },
+    {
+      "id": "1550883360899",
+      "loadName": "160003",
+      "customer": "1550880188296",
+      "driver": "1550882289326",
+      "pickupdate": "2019-02-23T00:55:48.468Z",
+      "pickuplocation": "SA",
+      "deliverydate": "2019-02-23T00:55:48.468Z",
+      "deliverylocation": "RA",
+      "grossrate": "5000",
+      "accounted": true,
+      "deliveryrate": "4000",
+      "loadNumber": "LN3"
+    },
+    {
+      "id": "1550883394280",
+      "loadName": "160004",
+      "customer": "1550880222815",
+      "driver": "1550882289326",
+      "pickupdate": "2019-02-23T00:56:19.218Z",
+      "pickuplocation": "ZE",
+      "deliverydate": "2019-02-23T00:56:19.218Z",
+      "deliverylocation": "CA",
+      "grossrate": "1500",
+      "accounted": true,
+      "deliveryrate": "1000",
+      "loadNumber": "LN5"
+    },
+    {
+      "id": "1550892711011",
+      "loadName": "160005",
+      "customer": "1550880222815",
+      "driver": "1550882289326",
+      "pickupdate": "2019-02-23T00:56:19.218Z",
+      "pickuplocation": "ZE",
+      "deliverydate": "2019-02-23T00:56:19.218Z",
+      "deliverylocation": "CA",
+      "grossrate": "1500",
+      "accounted": true,
+      "deliveryrate": "1000",
+      "loadNumber": "LN4"
+    },
+    {
+      "id": "1550893467409",
+      "loadName": "160006",
+      "customer": "1550880222815",
+      "driver": "1550882289326",
+      "pickupdate": "2019-02-23T00:56:19.218Z",
+      "pickuplocation": "ZE",
+      "deliverydate": "2019-02-23T00:56:19.218Z",
+      "deliverylocation": "CA",
+      "grossrate": "1500",
+      "accounted": true,
+      "deliveryrate": "1000",
+      "loadNumber": "LN6"
+    },
+    {
+      "id": "1550978748630",
+      "loadName": "160007",
+      "customer": "1550880202215",
+      "driver": "1550882289326",
+      "pickupdate": "2019-02-23T00:47:35.346Z",
+      "pickuplocation": "WDC",
+      "deliverydate": "2019-02-23T00:47:35.346Z",
+      "deliverylocation": "FL",
+      "grossrate": "1000",
+      "accounted": true,
+      "deliveryrate": "1000",
+      "loadNumber": "LN7"
+    },
+    {
+      "id": "1550982222258",
+      "loadName": "160008",
+      "customer": "1550880238975",
+      "driver": "1550881506032",
+      "pickupdate": "2019-02-20",
+      "pickuplocation": "TA",
+      "deliverydate": "2019-02-24T04:23:11.069Z",
+      "deliverylocation": "SA",
+      "grossrate": "7000",
+      "deliveryrate": "5000",
+      "accounted": false,
+      "loadNumber": "LN8"
+    },
+    {
+      "id": "1550984474031",
+      "loadName": "160009",
+      "customer": "1550880238975",
+      "driver": "1550881506032",
+      "pickupdate": "2019-02-20",
+      "pickuplocation": "TA",
+      "deliverydate": "2019-02-24T04:23:11.069Z",
+      "deliverylocation": "SA",
+      "grossrate": "7000",
+      "accounted": false,
+      "deliveryrate": "5000",
+      "loadNumber": "LN9"
+    },
+    {
+      "id": "1550984478126",
+      "loadName": "160010",
+      "customer": "1550880222815",
+      "driver": "1550882289326",
+      "pickupdate": "2019-02-23T00:56:19.218Z",
+      "pickuplocation": "ZE",
+      "deliverydate": "2019-02-23T00:56:19.218Z",
+      "deliverylocation": "CA",
+      "grossrate": "1500",
+      "accounted": false,
+      "deliveryrate": "1000",
+      "loadNumber": "LN10"
+    },
+    {
+      "id": "1550993929150",
+      "loadName": "160011",
+      "customer": "1550880188296",
+      "driver": "1550882289326",
+      "pickupdate": "2019-12-01",
+      "pickuplocation": "SA",
+      "deliverydate": "2019-02-23T00:55:48.468Z",
+      "deliverylocation": "RA",
+      "grossrate": "5000",
+      "accounted": false,
+      "deliveryrate": "4000",
+      "loadNumber": "LN11"
+    },
+    {
+      "customer": "1550880188296",
+      "driver": "1550882289326",
+      "pickupdate": "2019-02-25T02:49:29.619Z",
+      "pickuplocation": "PS",
+      "deliverydate": "2019-01-25",
+      "deliverylocation": "SG",
+      "grossrate": "3000",
+      "deliveryrate": "3000",
+      "loadName": "160012",
+      "id": "1551062983519",
+      "accounted": true,
+      "loadNumber": "LN12"
+    },
+    {
+      "customer": "1550880188296",
+      "driver": "1550881506032",
+      "pickupdate": "2019-02-23T00:47:14.187Z",
+      "pickuplocation": "LA",
+      "deliverydate": "2019-02-23T00:47:14.187Z",
+      "deliverylocation": "TX",
+      "grossrate": "2000",
+      "deliveryrate": "1900",
+      "id": "1551074390577",
+      "loadName": "160013",
+      "accounted": false,
+      "loadNumber": "LN13"
+    },
+    {
+      "customer": "1550880222815",
+      "driver": "1550882289326",
+      "pickupdate": "2019-02-23T00:56:19.218Z",
+      "pickuplocation": "ZE",
+      "deliverydate": "2019-02-23T00:56:19.218Z",
+      "deliverylocation": "CA",
+      "grossrate": "1500",
+      "deliveryrate": "1000",
+      "loadNumber": "LN14",
+      "id": "1551085892100",
+      "loadName": "160014",
+      "accounted": false
+    },
+    {
+      "customer": "1550880222815",
+      "driver": "1550882289326",
+      "pickupdate": "2019-02-23T00:56:19.218Z",
+      "pickuplocation": "ZE",
+      "deliverydate": "2019-02-23T00:56:19.218Z",
+      "deliverylocation": "CA",
+      "grossrate": "1500",
+      "deliveryrate": "1000",
+      "loadNumber": "LN15",
+      "id": "1554440100361",
+      "loadName": "160015",
+      "accounted": false
+    }
+  ],
+  "usefullInfo": {
+    "nextLoadId": 160016,
+    "dueNetDays": 30,
+    "unitNo": "UNIT 4593",
+    "payslipNo": 201910,
+    "invoiceNo": 1040
+  }
+}
