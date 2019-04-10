@@ -108,7 +108,8 @@ class EditLoad extends Component {
     delete state["drivers"];
     delete state["customers"];
     delete state["loads"];
-    delete state['load'];
+    delete state["load"];
+    delete state["allLoads"];
     delete state["searchQuery"];
     let load = this.props.data.load;
     load[load.findIndex(l => l.id === state.id)] = state;
@@ -178,10 +179,6 @@ class EditLoad extends Component {
             target: { value: this.state.load[0].id },
             persist: () => {}
           });
-        } else {
-          document
-            .querySelectorAll(".editload input:not([type=submit]")
-            .forEach(x => (x.value = ""));
         }
       });
     }
