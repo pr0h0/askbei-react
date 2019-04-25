@@ -29,7 +29,8 @@
     "eject": "react-scripts eject",
     "electron": "electron .",
     "electron-dev": "ELECTRON_START_URL=http://localhost:59678 electron .",
-    "prettier": "prettier --write *.js* */*.js* */*/*.js*"
+    "prettier": "prettier --write *.js* */*.js* */*/*.js*",
+    "build-electron": "electron-packager ."
   },
   "eslintConfig": {
     "extends": "react-app"
