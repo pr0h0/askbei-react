@@ -563,7 +563,8 @@ class DriversPayments extends Component {
       let load = this.props.data.load.filter(i => i.id === l.load)[0];
       if (
         new Date(this.shortDate(load.pickupdate)) <= to &&
-        new Date(this.shortDate(load.pickupdate)) >= from
+        new Date(this.shortDate(load.pickupdate)) >= from &&
+        load.driver === this.refs["driverSelect"].value
       ) {
         return (
           <div className="tr" key={l.invoiceNumber}>

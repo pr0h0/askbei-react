@@ -24,11 +24,14 @@ async function generatePDF(template, data) {
   });
   const page = await browser.newPage();
   const content = await compileHBS(template, data);
-
+  let path = data.folder || "";
+  path += "/";
+  path += data.fileName || Date.now() + ".pdf";
+  path += path.endsWith(".pdf") ? "" : ".pdf";
   await page.setContent(content);
   await page.emulateMedia("screen");
   await page.pdf({
-    path: (data.folder || "") + "/" + (data.fileName || Date.now() + ".pdf"),
+    path,
     format: "Letter",
     printBackground: true
   });
@@ -48,7 +51,8 @@ function accounting(data) {
     loadNumber: data.loadNumber,
     drives: [data.loadRowData],
     fileName: data.fileName,
-    folder: data.folder
+    folder: data.folder,
+    driverName: data.driverName
   };
   generatePDF("invoice", data);
 }

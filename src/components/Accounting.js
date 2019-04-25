@@ -225,7 +225,11 @@ class Accounting extends Component {
     let load = state.allLoads.filter(
       l => l.id === state.curentRemainingLoad
     )[0];
-    pdf = { ...pdf, invoiceDate: this.shortDate(pdf.invoiceDate) };
+    pdf = {
+      ...pdf,
+      invoiceDate: this.shortDate(pdf.invoiceDate),
+      driverName: this.props.data.drivers.filter(d => d.id)[0].man.name
+    };
     let invoice = {
       load: load.id,
       customer: load.customer,

@@ -97,7 +97,7 @@ class Options extends Component {
             name="dueNetDays"
           />
         </div>
-        <div className="input">
+        {/* <div className="input">
           <label>Unit number</label>
           <input
             type="text"
@@ -105,7 +105,7 @@ class Options extends Component {
             onChange={this.handleInputChange}
             name="unitNo"
           />
-        </div>
+        </div> */}
         <div className="input">
           <label>Payslip NO</label>
           <input
